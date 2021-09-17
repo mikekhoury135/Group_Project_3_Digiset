@@ -12,4 +12,4 @@ Team Members:
 Michael Khoury,
 Farnaz Niazi,
 Nathan Yeboah,
-Jeannot Bongo,
+Jeannot Bongo
