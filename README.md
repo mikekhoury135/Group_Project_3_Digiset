@@ -10,6 +10,6 @@ the team does not currently possess any back end technologies.
 Team Members:
 
 Michael Khoury
-FarnaZ Niazi
+Farnaz Niazi
 Nathan Yeboah
 Jeannot Bongo
