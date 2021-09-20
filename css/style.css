@@ -169,10 +169,19 @@ nav.stroke ul li a:hover:after {
 .about-digiset-bio {
     text-align: center;
 }
-
+.bio-text {
+    font-size: 24px;
+    font-family: 'KoHo', sans-serif;
+}
 
 /* MEDIA QUERIES */
 
+@media (min-width: 992px) {
+    .card {
+        flex: 1 0 0%;
+        margin-bottom: 0;
+    }
+}
 @media (min-width: 768px) {
     .hero-header-text {
         font-size: 36px;
