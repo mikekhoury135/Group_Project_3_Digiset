@@ -176,12 +176,6 @@ nav.stroke ul li a:hover:after {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 992px) {
-    .card {
-        flex: 1 0 0%;
-        margin-bottom: 0;
-    }
-}
 @media (min-width: 768px) {
     .hero-header-text {
         font-size: 36px;
