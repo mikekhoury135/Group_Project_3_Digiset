@@ -1,0 +1,236 @@
+/* GLOBAL CONTENT */
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-image: url('/images/Logo\ Animation3.gif');
+    background-repeat: no-repeat; 
+    background-color: #283046;
+    background-position: center;
+}
+body {
+    background: linear-gradient(90deg, #E8CBC0 0%, #636FA4 100%);
+}
+.img-fluid {
+    padding: 20px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: linear-gradient(90deg, #E8CBC0 0%, #636FA4 100%);
+    margin: 0 0 10px 0;
+}
+.nav-logo {
+    width: 180px;
+    height: auto;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.nav-item {
+    font-family: 'KoHo', sans-serif;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #000;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 95vh;
+}
+.hero-header {
+    text-align: center;
+    margin: auto 0;
+}
+.hero-header-text {
+    font-family: 'KoHo', sans-serif;
+    padding: 10px;
+}
+.hero-header-text-lg {
+    font-family: 'KoHo', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.hero-logo {
+    width: 70%;
+    height: auto
+}
+.hero-image {
+    text-align: center;
+    margin: auto 0;
+}
+
+/* HOMEPAGE SHOWCASE */
+
+.homepage-showcase-1 {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+.homepage-showcase-2 {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+.homepage-mockup {
+    margin: auto 0;
+    visibility: hidden;
+}
+.homepage-mockup-2 {
+    margin: auto 0;
+    visibility: hidden;
+}
+.homepage-features {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.feature-text {
+    font-family: 'KoHo', sans-serif;
+}
+.feature-text-fade-1, .feature-text-fade-2, .feature-text-fade-3, 
+.feature-text-fade-4, .feature-text-fade-5, .feature-text-fade-6 {
+    visibility: hidden;
+}
+
+/* PRICING CONTENT */
+
+.pricing-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+    visibility: hidden;
+}
+.card {
+    padding: 20px;
+    background-color: transparent;
+    border: 5px solid rgba(0,0,0,.125);
+    font-family: 'KoHo', sans-serif;
+    font-size: 24px;
+}
+.card-title {
+    font-size: 36px;
+    text-align: center;
+}
+.card-text {
+    font-size: 28px;
+    min-height: 50px;
+}
+
+/* ABOUT DIGISET CONTENT */
+
+.about-digiset-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+    visibility: hidden;
+}
+.about-digiset-bio {
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .hero-header-text {
+        font-size: 36px;
+    }
+    .hero-header-text-lg {
+        font-size: 48px;
+    }
+    .nav-item {
+        font-size: 30px;
+    }
+    .feature-text {
+        font-size: 30px;
+        padding: 40px 0 0 0;
+    }
+}
+@media (min-width: 992px) {
+    .nav-item {
+        font-size: 30px;
+    }
+    .hero-header-text {
+        font-size: 36px;
+        padding: 50px 0 0 0;
+    }
+    .hero-header-text-lg {
+        font-size: 48px;
+    }
+    .hero-content {
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .hero-header {
+        text-align: center;
+        margin: auto 0;
+    }
+    .feature-text {
+        font-size: 36px;
+        padding: 50px 0 0 0;
+    }
+    .minus-padding {
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    .hero-header-text {
+        font-size: 32px;
+    }
+    .hero-header-text-lg {
+        font-size: 38px;
+    }
+    .nav-item {
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    .feature-text {
+        font-size: 24px;
+        padding: 30px 0 0 0;
+    }
+}
+
