@@ -1,4 +1,5 @@
-if ($(window).width() >= 1200) {
+if ($(window).height() >= 1000) {
+if ($(window).width() >= 992) {
 
     $(window).on("scroll.homepage-mockup", function () {
         var topDivHeight = $(".hero-content").height();
@@ -130,7 +131,7 @@ if ($(window).width() >= 1200) {
         var fadeDivHeight7 = $(".feature-text-fade-5").height();
         var viewPortSize = $(this).height();
 
-        var triggerAt = -700;
+        var triggerAt = -650;
         var triggerHeight = (fadeDivHeight + fadeDivHeight2 + fadeDivHeight3 + fadeDivHeight4 + fadeDivHeight5 + fadeDivHeight6 + fadeDivHeight7 + topDivHeight - viewPortSize) + triggerAt;
 
         if ($(window).scrollTop() >= triggerHeight) {
@@ -152,7 +153,7 @@ if ($(window).width() >= 1200) {
         var fadeDivHeight8 = $(".feature-text-fade-6").height();
         var viewPortSize = $(this).height();
 
-        var triggerAt = -400;
+        var triggerAt = -600;
         var triggerHeight = (fadeDivHeight + fadeDivHeight2 + fadeDivHeight3 + fadeDivHeight4 + fadeDivHeight5 + fadeDivHeight6 + fadeDivHeight7 + fadeDivHeight8 + topDivHeight - viewPortSize) + triggerAt;
 
         if ($(window).scrollTop() >= triggerHeight) {
@@ -208,7 +209,15 @@ if ($(window).width() >= 1200) {
         }
     });
 
+} else if ($(window).width() < 992) {
+    $('.homepage-mockup, .feature-text-fade-1, .feature-text-fade-2, .feature-text-fade-3, .homepage-mockup-2, .feature-text-fade-4, .feature-text-fade-5, .feature-text-fade-6, .pricing-content, .about-digiset-content, .about-digiset-content-2').css('visibility', 'visible').hide().fadeIn();
+    
 }
+} else if ($(window).height() < 1000) {
+    $('.homepage-mockup, .feature-text-fade-1, .feature-text-fade-2, .feature-text-fade-3, .homepage-mockup-2, .feature-text-fade-4, .feature-text-fade-5, .feature-text-fade-6, .pricing-content, .about-digiset-content, .about-digiset-content-2').css('visibility', 'visible').hide().fadeIn();
+}
+
+
 
 function fade() {
     $('.preloader').fadeOut("slow");
