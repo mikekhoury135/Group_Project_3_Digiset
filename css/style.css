@@ -137,11 +137,11 @@ nav.stroke ul li a:hover:after {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 0;
     visibility: hidden;
 }
 .card {
-    padding: 20px;
+
     background-color: transparent;
     border: 5px solid rgba(0,0,0,.125);
     font-family: 'KoHo', sans-serif;
@@ -154,6 +154,15 @@ nav.stroke ul li a:hover:after {
 .card-text {
     font-size: 28px;
     min-height: 50px;
+    text-align: center;
+}
+.card-body {
+    
+}
+.card-list {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
 }
 
 /* ABOUT DIGISET CONTENT */
