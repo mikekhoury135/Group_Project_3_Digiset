@@ -100,7 +100,7 @@ nav.stroke ul li a:hover:after {
     margin: 0 auto;
 }
 .hero-header-download>img {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 /* HOMEPAGE SHOWCASE */
@@ -179,6 +179,14 @@ nav.stroke ul li a:hover:after {
 /* ABOUT DIGISET CONTENT */
 
 .about-digiset-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    visibility: hidden;
+}
+.about-digiset-content-2 {
     max-width: 1200px;
     display: flex;
     justify-content: center;
